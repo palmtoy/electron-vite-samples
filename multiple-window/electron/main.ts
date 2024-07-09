@@ -31,6 +31,10 @@ function createWindow() {
 
   // Renderer 3
   const nodeFalse = new BrowserWindow({
+    webPreferences: {
+      contextIsolation: false,
+      nodeIntegration: false,
+    },
     width: 600,
     height: 400,
   })
